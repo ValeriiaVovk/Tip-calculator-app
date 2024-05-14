@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Tip</title>
+</head>
+
+<body>
+    <section>
+        <div class="bill-info">
+            <div class="amount">
+                <label for="bill-amount" class="label">Bill</label>
+                <input type="text" name="bill" id="bill-amount" class="bg-amount">
+            </div>
+
+            <div class="select-tip">
+                <label for="tip" class="label">Select tip %</label>
+                <div class="variables-of-tip">
+                    <div>
+                        <input type="radio" name="tip" id="tipFive" value="5%">
+                        <label for="tipFive" class="label-for-select-tip">5%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" id="tipTen" value="10%">
+                        <label for="tipTen" class="label-for-select-tip">10%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" id="tipFifteen" value="15%">
+                        <label for="tipFifteen" class="label-for-select-tip">15%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" id="tipTwentyFive" value="25%">
+                        <label for="tipTwentyFive" class="label-for-select-tip">25%</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="tip" id="tipFifty" value="50%">
+                        <label for="tipFifty" class="label-for-select-tip">50%</label>
+                    </div>
+                    <div><input type="text" placeholder="Custom" class="custom-tip" id="custom-tip"></div>
+                </div>
+            </div>
+
+            <div class="amount">
+                <label for="number-of-people" class="label">Number of People</label>
+                <input type="text" name="numberOfPerson" id="number-of-people" value="" class="bg-people">
+            </div>
+        </div>
+
+        <div class="bill-result">
+            <div class="tip-total">
+                <p class="result_header">Tip Amount <span>/ person</span></p>
+                <p class="tip-amount">$<span id="tip-per-person">0.00</span></p>
+            </div>
+            <div class="bill-total">
+                <p class="result_header">Total <span>/ person</span></p>
+                <p class="total-per-person">$<span id="total-per-person">0.00</span></p>
+            </div>
+            <button id="calculate">RESULT</button>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
